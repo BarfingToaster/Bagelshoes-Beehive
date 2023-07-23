@@ -1,0 +1,49 @@
+<config>
+<append xpath="/blocks">
+	<block name="Beehive">
+		<property name="Class" value="PlantGrowing"/>
+		<property name="DisplayType" value="blockMulti"/>
+		<property name="Material" value="Mwood"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="Group" value="Building,advBuilding"/>
+		<property name="DescriptionKey" value="BeehiveDesc"/>
+		<property name="Model" value="@:Entities/LootContainers/tier1LootChestPrefab.prefab"/>
+		<property name="ModelOffset" value="0,0.5,0"/>
+		<property name="MultiBlockDim" value="1,1,1"/>
+		<property name="TintColor" value="29D9BE"/>
+		<property name="StabilitySupport" value="true"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Path" value="solid"/>
+		<property name="EconomicValue" value="200"/>
+		<property name="Collide" value="movement,rockets,sight,melee"/>
+		<property name="CustomIcon" value="cntLootChestHeroInsecureT1"/>
+		<property name="CustomIconTint" value="29D9BE"/>
+		<property class="PlantGrowing">
+			<property name="Next" value="BeehiveFull"/>
+			<property name="GrowthRate" value="180"/>
+			<property name="FertileLevel" value="0"/>
+			<property name="IsRandom" value="false"/> 
+		</property>
+		<property name="FilterTags" value="fdecor,fother,ffurniture"/>
+	</block>
+	
+	<block name="BeehiveFull">
+		<property name="Class" value="Loot"/>
+		<property name="DisplayType" value="blockMulti"/>
+		<property name="CreativeMode" value="Dev"/>
+		<property name="Material" value="Mwood"/>
+		<property name="Model" value="@:Entities/LootContainers/tier1LootChestPrefab.prefab"/>
+		<property name="ModelOffset" value="0,0.5,0"/>
+		<property name="MultiBlockDim" value="1,1,1"/>
+		<property name="TintColor" value="B09A1C"/>
+		<property name="StabilitySupport" value="false"/>
+		<property name="Shape" value="ModelEntity"/>
+		<property name="Path" value="solid"/>
+		<property name="Collide" value="movement,rockets,sight,melee"/>
+		<property name="LootList" value="BeehiveLoot"/>
+		<property name="CustomIcon" value="cntLootChestHeroInsecureT1"/>
+		<property name="CustomIconTint" value="B09A1C"/>
+		<property name="DowngradeBlock" value="Beehive"/>
+	</block>
+</append>
+</config>

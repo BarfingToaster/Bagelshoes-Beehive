@@ -1,0 +1,7 @@
+Key,File,Type,english
+Beehive,blocks,Block,Beehive
+BeehiveDesc,blocks,Block,"A beehive that produces honey."
+BeehiveFull,Blocks,block,Full Beehive
+
+waxBeehiveStart,items,Item,Wax Beehive Starter
+waxBeehiveStartDesc,items,Item,"A wad of wax to start a beehive."

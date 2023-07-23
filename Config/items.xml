@@ -1,0 +1,15 @@
+<config>
+<append xpath="/items">
+	<item name="waxBeehiveStart">
+		<property name="DescriptionKey" value="waxBeehiveStartDesc"/>
+		<property name="HoldType" value="12"/>
+		<property name="Tags" value="junk"/>
+		<property name="Meshfile" value="@:Other/Items/Tools/candlePrefab.prefab"/>
+		<property name="Material" value="Morganic"/>
+		<property name="Stacknumber" value="50"/> <!-- STK torch -->
+		<property name="EconomicValue" value="24"/>
+		<property name="CustomIcon" value="candleTableLight"/>
+		<property name="CustomIconTint" value="B09A1C"/>
+	</item>
+</append>
+</config>
